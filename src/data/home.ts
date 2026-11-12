@@ -19,11 +19,11 @@ type Icon = ComponentType<SVGProps<SVGSVGElement>>;
    into /public/images with the same file names. */
 export const images = {
   logo: "/images/logo.png",
-  logoLight: "/images/logo-light.png",
-  hero: "/images/mainroom.png",
+  logoLight: "/images/logo.png",
+  hero: "/images/standard.png",
   about: "/images/who.png",
-  why: "/images/prac7.jpeg",
-  review: "/images/prac5.jpeg",
+  why: "/images/flex.png",
+  review: "/images/semiprivate.png",
   gallery: ["/images/innerroom.png", "/images/conference.png", "/images/prac8.jpeg"],
 };
 
