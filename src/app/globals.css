@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "@fontsource-variable/plus-jakarta-sans";
+@import "@fontsource-variable/dm-sans";
+
+/* ------------------------------------------------------------------
+   Brand tokens — swap --primary for the exact Pracvarsity brand blue
+   ------------------------------------------------------------------ */
+:root {
+  --background: #f8f9fb;
+  --foreground: #0b0b0c;
+  --surface: #f0f0f0;
+  --card: #ffffff;
+  --muted: #4b4f58;
+  --border: #e3e4e8;
+  --primary: #2350b9;
+  --primary-dark: #1b3f94;
+  --primary-foreground: #ffffff;
+  --star: #f6a609;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-star: var(--star);
+
+  --font-sans: "DM Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  --animate-marquee: marquee 35s linear infinite;
+  --animate-accordion-down: accordion-down 0.3s ease-out;
+  --animate-accordion-up: accordion-up 0.3s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Fluid type scale (mobile first)
+   ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.125rem);
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+  }
+
+  h1 {
+    font-size: clamp(2.75rem, 1.6rem + 5.6vw, 6.75rem);
+  }
+
+  h2 {
+    font-size: clamp(2.25rem, 1.4rem + 4.2vw, 5.25rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.875rem);
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .container-x {
+    @apply mx-auto w-full max-w-[1320px] px-5 sm:px-8;
+  }
+
+  .h2-lead {
+    font-size: clamp(1.5rem, 1.1rem + 1.9vw, 3rem);
+    line-height: 1.15;
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  }
+}
