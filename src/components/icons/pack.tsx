@@ -302,3 +302,21 @@ export const FacebookIcon = (props: IconProps) => (
     <path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21h2.9Z" />
   </svg>
 );
+
+
+
+/* --------------------------- Company ---------------------------- */
+
+export const LightbulbIcon = (props: IconProps) => (
+  <svg {...stroke} {...props}>
+    <path d="M9 18h6M10 21.5h4" />
+    <path d="M12 2.5a6.5 6.5 0 0 0-3.8 11.8c.5.4.8 1 .8 1.6V16h6v-.1c0-.6.3-1.2.8-1.6A6.5 6.5 0 0 0 12 2.5Z" />
+  </svg>
+);
+
+export const ChartIcon = (props: IconProps) => (
+  <svg {...stroke} {...props}>
+    <path d="M3.5 3.5v17h17" />
+    <path d="M8 16v-4M12.5 16V8M17 16v-6" />
+  </svg>
+);

@@ -7,7 +7,7 @@ import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "motion/
 import { ArrowUpRightIcon, ChevronDownIcon, CloseIcon, MenuIcon } from "@/components/icons/pack";
 import { Logo } from "@/components/shared/logo";
 import { Button } from "@/components/ui/button";
-import { navLinks } from "@/data/home";
+import { navLinks, routes } from "@/data/navigation";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -83,8 +83,8 @@ export function Header() {
 
           <div className="flex items-center gap-2">
             <Button asChild className="hidden sm:inline-flex">
-              <Link href="#book">
-                Book Now <ArrowUpRightIcon className="transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+              <Link href={routes.book}>
+                Book A Space <ArrowUpRightIcon className="transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
               </Link>
             </Button>
             <Button
@@ -173,8 +173,8 @@ export function Header() {
                 variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0 } }}
               >
                 <Button asChild size="lg" className="w-full">
-                  <Link href="#book" onClick={close}>
-                    Book Now <ArrowUpRightIcon />
+                  <Link href={routes.book} onClick={close}>
+                    Book A Space <ArrowUpRightIcon />
                   </Link>
                 </Button>
               </motion.div>
