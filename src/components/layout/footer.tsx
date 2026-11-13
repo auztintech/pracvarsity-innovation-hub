@@ -49,11 +49,12 @@ function Year() {
   return <span ref={ref}>2026</span>;
 }
 
-export function Footer() {
+export function Footer({ cta = true }: { cta?: boolean }) {
   return (
     <footer className="pt-20 sm:pt-28">
       <div className="container-x">
         {/* CTA */}
+        {cta && (
         <Reveal from="up">
           <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-12 text-white sm:px-12 sm:py-16">
             <div className="pointer-events-none absolute -top-24 -right-24 size-72 rounded-full bg-white/10" />
@@ -77,7 +78,10 @@ export function Footer() {
               </div>
             </div>
           </div>
-        </Reveal>
+                </Reveal>
+        )}
+
+    
 
         <Stagger className="grid gap-12 py-16 sm:py-20 lg:grid-cols-12" stagger={0.1}>
           <StaggerItem from="left" className="lg:col-span-4">
