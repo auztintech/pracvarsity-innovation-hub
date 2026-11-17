@@ -8,9 +8,9 @@ export type BookingPlan = {
 };
 
 export const bookingPlans: BookingPlan[] = [
-  { slug: "daily", name: "Daily", price: 1500, period: "day" },
-  { slug: "weekly", name: "Weekly", price: 8000, period: "week" },
-  { slug: "monthly", name: "Monthly", price: 30000, period: "month" },
+  { slug: "daily", name: "Daily", price: 2000, period: "day" },
+  { slug: "weekly", name: "Weekly", price: 10000, period: "week" },
+  { slug: "monthly", name: "Monthly", price: 36000, period: "month" },
 ];
 
 export type BookingResponse = {
