@@ -215,21 +215,15 @@ export const programs = [
   },
   {
     tag: "Research",
-    title: "Data Analysis for Academic Research",
+    title: "Research Methods, Data Analysis and AI",
     text: "AI-assisted literature review, statistics, visualisation and research methods.",
     audience: "Researchers, lecturers, postgraduate students and NGOs",
     image: "/images/prac7.jpeg",
   },
-  {
-    tag: "Finance",
-    title: "Finance Data Analytics",
-    text: "Excel, SQL, Power BI and Python for financial analysis and dashboards.",
-    audience: "Graduates, accountants, analysts and career switchers",
-    image: "/images/prac3.jpeg",
-  },
+  
   {
     tag: "Healthcare",
-    title: "Healthcare Data Analytics",
+    title: "Healthcare Data Analytics and AI",
     text: "Data-driven healthcare research, patient outcomes and operations.",
     audience: "Doctors, nurses, pharmacists and public health professionals",
     image: "/images/prac1.jpeg",
@@ -266,14 +260,14 @@ export const testimonials = [
   },
   {
     quote:
-      "Developing my AI-powered administrative assistant changed how I approach technology in my professional work.",
-    name: "Esther Adejayan",
-    role: "Final-year Student",
+      "Pracvarsity hub; is an amazing space, a place to meet beautiful people. Quiet and Comfortable.",
+    name: "Iyèn",
+    role: "Hub user",
   },
   {
-    quote: "It was a phenomenal experience. I learned so much and would gladly enroll again.",
-    name: "Joy Esohe Omoriyekomwan",
-    role: "Lecturer, University of Benin",
+    quote: "Nice working space with Fast Internet speed",
+    name: "Ezekiel Prudence Elozino",
+    role: "Hub User",
   },
 ];
 

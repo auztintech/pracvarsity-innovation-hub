@@ -4,13 +4,13 @@ export type NavLink = {
   children?: { label: string; href: string }[];
 };
 
-/* Academy and Consultancy point to their homepage sections for now.
-   Switch them to "/academy" and "/consultancy" once those pages exist. */
+/* Consultancy points to its homepage section for now.
+   Switch it to "/consultancy" once that page exists. */
 export const routes = {
   home: "/",
   about: "/#about",
   hub: "/hub",
-  academy: "/#academy",
+  academy: "/academy",
   consultancy: "/#consultancy",
   contact: "/#contact",
   book: "/hub#book",

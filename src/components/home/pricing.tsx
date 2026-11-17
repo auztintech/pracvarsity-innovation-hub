@@ -1,9 +1,7 @@
-import Link from "next/link";
-
+import { BookPlanButton } from "@/components/booking/booking-dialog";
 import { ArrowUpRightIcon, CheckIcon } from "@/components/icons/pack";
 import { Reveal, SplitHeading, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { SectionBadge } from "@/components/shared/section-badge";
-import { Button } from "@/components/ui/button";
 import { plans } from "@/data/home";
 import { cn } from "@/lib/utils";
 
@@ -69,12 +67,14 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <Button asChild size="lg" variant={plan.featured ? "white" : "default"} className="mt-8 w-full">
-                  <Link href="#book">
-                    Choose {plan.name}
-                    <ArrowUpRightIcon />
-                  </Link>
-                </Button>
+                <BookPlanButton
+                  plan={plan.name.toLowerCase()}
+                  variant={plan.featured ? "white" : "default"}
+                  className="mt-8 w-full"
+                >
+                  Choose {plan.name}
+                  <ArrowUpRightIcon />
+                </BookPlanButton>
               </div>
             </StaggerItem>
           ))}

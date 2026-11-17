@@ -6,7 +6,7 @@ import { Photo } from "@/components/shared/photo";
 import { SectionBadge } from "@/components/shared/section-badge";
 import { Button } from "@/components/ui/button";
 import { academyHighlights, companyImages } from "@/data/company";
-import { programs } from "@/data/home";
+import { courses } from "@/data/academy";
 import { routes } from "@/data/navigation";
 
 const directions = ["left", "up", "right"] as const;
@@ -71,10 +71,10 @@ export function AcademySection() {
         </Reveal>
 
         <Stagger className="mt-8 grid gap-5 md:grid-cols-3 lg:gap-6" stagger={0.12}>
-          {programs.slice(0, 3).map((program, i) => (
-            <StaggerItem key={program.title} from={directions[i]} className="h-full">
+          {courses.slice(0, 3).map((program, i) => (
+            <StaggerItem key={program.slug} from={directions[i]} className="h-full">
               <Link
-                href={routes.academy}
+                href={`${routes.academy}#programmes`}
                 className="group flex h-full flex-col rounded-3xl bg-background p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/10 sm:p-7"
               >
                 <span className="w-fit rounded-full bg-primary px-4 py-1.5 font-heading text-sm font-medium text-white">
@@ -83,7 +83,7 @@ export function AcademySection() {
                 <h4 className="mt-5 text-xl transition-colors group-hover:text-primary sm:text-2xl">
                   {program.title}
                 </h4>
-                <p className="mt-3 flex-1 text-muted">{program.text}</p>
+                <p className="mt-3 flex-1 text-muted">{program.summary}</p>
                 <span className="mt-6 inline-flex items-center gap-2 font-heading font-medium text-primary">
                   Learn more
                   <ArrowUpRightIcon className="size-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />

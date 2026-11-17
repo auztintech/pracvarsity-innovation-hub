@@ -303,8 +303,6 @@ export const FacebookIcon = (props: IconProps) => (
   </svg>
 );
 
-
-
 /* --------------------------- Company ---------------------------- */
 
 export const LightbulbIcon = (props: IconProps) => (
@@ -318,5 +316,12 @@ export const ChartIcon = (props: IconProps) => (
   <svg {...stroke} {...props}>
     <path d="M3.5 3.5v17h17" />
     <path d="M8 16v-4M12.5 16V8M17 16v-6" />
+  </svg>
+);
+
+export const CopyIcon = (props: IconProps) => (
+  <svg {...stroke} {...props}>
+    <rect x="8.5" y="8.5" width="12" height="12" rx="2.5" />
+    <path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5" />
   </svg>
 );

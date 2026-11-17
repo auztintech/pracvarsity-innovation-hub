@@ -1,0 +1,33 @@
+/* Dialog motion: bottom sheet on phones, pop-in on larger screens */
+.pv-dialog-overlay[data-state="open"] {
+  animation: pv-fade-in 0.3s ease-out;
+}
+
+.pv-dialog-content[data-state="open"] {
+  animation: pv-sheet-up 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 640px) {
+  .pv-dialog-content[data-state="open"] {
+    animation: pv-pop-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@keyframes pv-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes pv-sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes pv-pop-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -46%) scale(0.96);
+  }
+}

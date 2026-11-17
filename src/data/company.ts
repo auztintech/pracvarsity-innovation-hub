@@ -105,8 +105,8 @@ export const consultancyServices: { icon: Icon; title: string; text: string }[] 
 
 export const impactStats: { value?: number; suffix?: string; label: string; text: string }[] = [
   { value: 957, suffix: "+", label: "People Trained", text: "Through our digital education initiative" },
-  { value: 1500, suffix: "+", label: "Hub Visits", text: "Paid visits to the Innovation Hub" },
-  { value: 57, label: "Workspace Capacity", text: "Seats across our workspaces" },
+  { value: 4000, suffix: "+", label: "Hub Visits", text: "Paid visits to the Innovation Hub" },
+  { value: 52, label: "Workspace Capacity", text: "Seats across our workspaces" },
   { label: "Growing", text: "Network of learners, professionals and collaborators" },
 ];
 
