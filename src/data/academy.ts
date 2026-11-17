@@ -15,7 +15,7 @@ export const REGISTER_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSchM_Ej-7KjCf980e5CrefmoVJGLGUwC1-YlesGL7THMjQDYg/viewform";
 
 export const academyImages = {
-  hero: "/images/conferenceroom.png",
+  hero: "/images/conference1.jpeg",
   side: "/images/mainroom.png",
 };
 
@@ -47,13 +47,13 @@ export const courses: Course[] = [
       "Emerging technologies",
     ],
     audience: ["Beginners", "Students", "Professionals", "Educators"],
-    image: "/images/mainroom.png",
+    image: "/images/Computer.webp",
     registerUrl: REGISTER_URL,
   },
   {
-    slug: "data-analysis-academic-research",
+    slug: " Research-Methods-Data-Analysis-and-AI",
     tag: "Research",
-    title: "Data Analysis for Academic Research",
+    title: "Research Methods, Data Analysis and AI",
     summary: "Use modern tools and AI to plan, analyse and present research that stands up to scrutiny.",
     topics: [
       "AI-assisted literature review",
@@ -62,7 +62,7 @@ export const courses: Course[] = [
       "Modern research methods",
     ],
     audience: ["Researchers", "Lecturers", "Postgraduate students", "NGOs", "Development professionals"],
-    image: "/images/conferenceroom.png",
+    image: "/images/Research.webp",
     registerUrl: REGISTER_URL,
   },
   {
@@ -72,13 +72,13 @@ export const courses: Course[] = [
     summary: "Analyse financial data, build dashboards and turn numbers into business insight.",
     topics: ["Excel", "SQL", "Power BI", "Python", "Financial dashboards", "Business insights"],
     audience: ["Students", "Graduates", "Finance professionals", "Accountants", "Analysts", "Career switchers"],
-    image: "/images/innerroom.png",
+    image: "/images/Finance.png",
     registerUrl: REGISTER_URL,
   },
   {
-    slug: "healthcare-data-analytics",
+    slug: "healthcare-data-analytics ",
     tag: "Healthcare",
-    title: "Healthcare Data Analytics",
+    title: "Healthcare Data Analytics and AI",
     summary: "Apply data-driven approaches to healthcare research, patient outcomes and operations.",
     topics: [
       "Healthcare research data",
@@ -87,7 +87,7 @@ export const courses: Course[] = [
       "Evidence-based decisions",
     ],
     audience: ["Doctors", "Nurses", "Pharmacists", "Laboratory scientists", "Public health professionals"],
-    image: "/images/mainroom2.png",
+    image: "/images/Healthcare.webp",
     registerUrl: REGISTER_URL,
   },
   {
@@ -102,7 +102,7 @@ export const courses: Course[] = [
       "Evidence-based decisions",
     ],
     audience: ["NGOs", "Project managers", "Development practitioners", "Grant managers", "Impact professionals"],
-    image: "/images/mainroom.png",
+    image: "/images/Monitoring.png",
     registerUrl: REGISTER_URL,
   },
   {
@@ -112,7 +112,7 @@ export const courses: Course[] = [
     summary: "Launch websites, apps and automations without traditional programming.",
     topics: ["Websites", "Workflow automation", "Business applications", "Launching digital solutions"],
     audience: ["Entrepreneurs", "Professionals", "Founders", "Non-technical creators"],
-    image: "/images/innerroom.png",
+    image: "/images/Low-Code.webp",
     registerUrl: REGISTER_URL,
   },
 ];
